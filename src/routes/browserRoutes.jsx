@@ -7,6 +7,7 @@ import InventoryPage from "../pages/InventoryPage"
 import ErrorPage from "../pages/ErrorPage"
 import CartPage from "../pages/CartPage"
 import AppLayout from "../Layout/AppLayout"
+import UnAuthorizedPage from "../pages/UnAuthorizedPage"
 
 export const routes = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ export const routes = createBrowserRouter([
             {
                 path:"inventory",
                 element:<InventoryPage/>
+            },
+            {
+                path:"not-authorized",
+                element:<UnAuthorizedPage/>
             },
             {
                 path:"*",

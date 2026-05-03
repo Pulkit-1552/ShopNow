@@ -8,4 +8,4 @@ const UnAuthorizedPage = () => {
   )
 }
 
-export default UnAuthorizedPage
+export default UnAuthorizedPage;
