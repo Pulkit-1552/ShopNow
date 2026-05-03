@@ -1,14 +1,15 @@
 import React from 'react';
 import {Outlet} from "react-router-dom";
+import Navbar from '../components/NavBar';
 
 
 const AppLayout = () => {
   return (
     <div>
-      <NavBar/>
+      <Navbar/>
       <Outlet/>
     </div>
   )
 }
 
-export default AppLayout
+export default AppLayout;

@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
-function Navbar() {
+export default function Navbar() {
   return (
     <nav style={styles.nav}>
-      <h2 style={styles.logo}>MyShop</h2>
+      <h2 style={styles.logo}>ShopNow</h2>
 
       <div style={styles.links}>
-        <Link to="/">Home</Link>
-        <Link to="/products">Products</Link>
-        <Link to="/cart">Cart</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">Signup</Link>
+        <Link style={styles.link} to="/">Home</Link>
+        <Link style={styles.link} to="/products">Products</Link>
+        <Link style={styles.link} to="/cart">Cart</Link>
+        <Link style={styles.link} to="/login">Login</Link>
+        <Link style={styles.link} to="/signup">Signup</Link>
       </div>
     </nav>
   );
@@ -31,6 +31,8 @@ const styles = {
     display: "flex",
     gap: "15px",
   },
+  link: {
+    color: "white",
+    textDecoration: "none",
+  },
 };
-
-export default Navbar;
